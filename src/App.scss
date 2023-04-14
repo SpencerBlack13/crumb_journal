@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+//Header 
+@font-face {
+    font-family: 'Aesthet_Nova';
+    font-weight: 900;
+    src: local('Aesthet_Nova'), url(./fonts/Aesthet_Nova.ttf) format('truetype');
+}
+
+html,
+body,
+#root,
+#app {
+    margin: 0;
+    font-family: 'Aesthet_Nova', sans-serif;
+    //letter-spacing: 1.5px;
+}
+
+//main body paragraph
+p{
+    font-family: 'Arial'!important;
+}
+// Background Colour
+#app {
+    background-color: #DCDAD4;
+    width: 100%;
+    height: 100%;
+}
+
+//The background 
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    max-width: 1500px;
+    min-width: 1500px;
+    max-height: 1250px;
+    min-height: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #EFEDE6;
+    border-bottom: #DCDAD4 20px solid;
+}
+
+//button style
+.btnText {
+    background-color: #6495ED;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+//The main button 
+.btnImg {
+    background-color: #DCDAD4;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+}
+
+.btnImg img {
+    width: 40px;
+}
+
+button:hover{
+    background-color: #663399;
+    cursor: pointer;
+}
+
+.pageTitle {
+    font-size: 60px;
+}
+
+.pageText {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* ==== Title page ====*/
+//LOGO
+#titleLogoImg {
+    width: 900px;
+    position: absolute;
+    right: 100px;
+    top: 400px
+}
+
+//Purple Sub title customize/organize/track
+#titleSubtitle {
+    font-size: 40px;
+    color: #663399;
+    position: absolute;
+    right: 210px;
+    top: 720px;
+}
+
+//Phone Img
+#titlePhoneImg{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    rotate: -15deg;
+    width: 400px;
+}
+
+/* ==== Purpose page ====*/
+//title
+#purposePage h1 
+{
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+
+//paragraph
+#purposePage p {
+    position: absolute;
+    left: 100px;
+    top: 410px;
+    width: 650px;
+}
+
+#purposePage button {
+    position: absolute;
+    left: 100px;
+    top: 670px;
+}
+
+//Img for purpose page
+#purposePage img {
+    position: absolute;
+    right: 100px;
+    top: 300px;
+    width: 600px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.363) -10px 10px 10px;
+}
+
+/* ==== Purpose Extended page ====*/
+//I access each child by index 
+#purposePageMore h1:nth-child(1) 
+{
+    //Goal title 
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#purposePageMore h1:nth-child(3) 
+{
+    //Reasoning Title
+    position: absolute;
+    left: calc(50% + 50px);
+    top: 100px;
+}
+
+#purposePageMore p:nth-child(2) 
+{
+    //Goal paragraph
+    position: absolute;
+    left: 100px;
+    top: 220px;
+    width: 40%;
+}
+
+#purposePageMore p:nth-child(4) 
+{
+    //Reasoning paragrph 
+    position: absolute;
+    left: calc(50% + 50px);
+    top: 220px;
+    width: 40%;
+}
+
+#purposePageMore button {
+    //See Less under reasoning
+    position: absolute;
+    left: 100px;
+    //right: 100px;
+    top: 730px;
+}
+
+/* ==== Interaction Page ====*/
+//Img of phone
+#interactionImg {
+    position: absolute;
+    width: 350px;
+    left: 100px;
+    top: 200px;
+}
+
+//Discription pop up 
+.modal{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 450px;
+    z-index: 100;
+    border: black 4px solid;
+    border-radius: 24px;
+}
+
+//Email pop up (Thank You!)
+.modal2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1104px;
+    height: 468px;
+    z-index: 100;
+    border: black 4px solid;
+    border-radius: 24px;
+}
+
+/* ==== Grid ====*/
+//Carousel
+.carousel-container{
+    position: absolute;
+    right: 200px;
+    top: 250px;
+}
+//Carousel right button 
+.react-multiple-carousel__arrow--right { 
+    right: -50px !important; 
+    transform: translateY(-20px);
+    background-color: #6495ED;
+}
+
+//Carousel right button hover
+.react-multiple-carousel__arrow--right:hover{ 
+    background-color: #663399;
+    cursor: pointer;
+}
+
+//Carousel left button 
+.react-multiple-carousel__arrow--left { 
+    left: -75px !important; 
+    transform: translateY(-20px);
+    background-color: #6495ED;
+}
+
+//Carousel left button hover 
+.react-multiple-carousel__arrow--left:hover{ 
+    background-color: #663399;
+    cursor: pointer;
+}
+
+.carousel-row{
+    margin-top: 30px;
+    width: 600px;
+}
+
+.react-multi-carousel-list{
+    position: unset !important;
+  }
+
+.item-img {
+    width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.item-questionmark {
+    width: 10%;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+.item-questionmark:hover {
+    opacity: 50%;;
+    cursor: pointer;
+}
+
+.item-txt {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    width: 90%;
+}
+
+/* ==== Email Page ====*/
+.formLabel {
+    font-size: 20px;
+}
+
+.formInput {
+    font-size: 20px;
+    width: 500px;
+    background-color: #DCDAD4;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#emailPage h1 
+{
+    //I'd love to hear from you!
+    position: absolute;
+    left: 100px;
+    top: 300px;
+}
+//different way to selet 
+#emailPage p:nth-child(2) {
+    //Get In touch below... 
+    position: absolute;
+    left: 100px;
+    top: 410px;
+}
+
+#emailPage p:nth-child(3) {
+    //Name:
+    position: absolute;
+    left: 100px;
+    top: 500px;
+}
+
+#emailPage input:nth-child(4) {
+    //Enter your name
+    position: absolute;
+    left: 100px;
+    top: 550px;
+}
+
+#emailPage p:nth-child(5) {
+    //Email Address:
+    position: absolute;
+    left: 100px;
+    top: 570px;
+}
+
+#emailPage input:nth-child(6) {
+    //Enter your email address
+    position: absolute;
+    left: 100px;
+    top: 620px;
+}
+
+#emailPage p:nth-child(7) {
+    //Wideget Idea:
+    position: absolute;
+    left: 100px;
+    top: 640px;
+}
+
+#emailPage textarea:nth-child(8) {
+    //Enter your idea
+    position: absolute;
+    left: 100px;
+    top: 690px;
+}
+
+#emailPage button {
+    position: absolute;
+    top: 970px;
+    left: 100px;
+}
+
+#emailPage img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+//footer
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: #313639;
+}
+
+#footer div{
+    position: absolute;
+    color: #EFEDE6;
+    right: 100px;
+    margin-top: 30px;
+}
